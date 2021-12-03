@@ -28,7 +28,7 @@ export default function Footer() {
                   <i className="flaticon-telephone is_flaticon" />
 
                   <div>
-                    <h5>+98 938 702 2102</h5>
+                    <h5 dir="ltr">+98 938 702 2102</h5>
                     <p>واتس‌اپ</p>
                   </div>
                 </div>
