@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  darkMode: 'media', // or false or 'class'
+  darkMode: 'media', // 'media' or 'class' or false
 
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',

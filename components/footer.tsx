@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       className="sigma_footer style-6 sigma_footer-dark"
-      style={{ backgroundImage: "url('assets/img/footer.jpg')" }}
+      style={{ backgroundImage: `url("/images/footer.jpg")` }}
     >
       <div className="sigma_footer-middle">
         <div className="container">
@@ -12,14 +12,14 @@ export default function Footer() {
             <div className="col-lg-4">
               <div className="sigma_footer-widget">
                 <div className="sigma_footer-logo mb-4">
-                  <Image src="assets/img/logo-light.png" alt="logo" />
+                  <img src="/images/logo-light.png" alt="logo" />
                 </div>
 
                 <div className="row">
                   <div className="col-sm-9">
                     <p className="mb-0">
-                      Leather is a durable and flexible material created by
-                      tanning animal rawhide and skins.
+                      چرم گردو با استفاده از بهترین متریال کالای دلخواه شما را
+                      تولید و با ارسال رایگان به تمامی نقاط اهواز ارسال میکند
                     </p>
                   </div>
                 </div>
@@ -28,8 +28,8 @@ export default function Footer() {
                   <i className="flaticon-telephone is_flaticon" />
 
                   <div>
-                    <h5>212 386 5575</h5>
-                    <p>Free Call</p>
+                    <h5>+98 938 702 2102</h5>
+                    <p>واتس‌اپ</p>
                   </div>
                 </div>
               </div>
@@ -38,6 +38,7 @@ export default function Footer() {
             <div className="col-lg-3 col-sm-3">
               <div className="sigma_footer-widget">
                 <h5 className="widget-title">Solutions</h5>
+
                 <ul className="sigma_footer-links">
                   <li>
                     <a href="login.html">Account</a>
@@ -91,20 +92,20 @@ export default function Footer() {
 
             <div className="col-lg-3 col-sm-6">
               <div className="sigma_footer-widget">
-                <h5 className="widget-title">Our Address</h5>
+                <h5 className="widget-title">ارتباط با ما</h5>
                 <ul className="sigma_footer-contact">
-                  <li>
-                    <i className="fal fa-map-marker-alt"></i>
+                  {/* <li>
+                    <i className="fal fa-map-marker-alt"/>
                     <p>60 Grant Ave. Central new Road</p>
+                  </li> */}
+
+                  <li>
+                    <i className="fal fa-phone" />
+                    <p dir="ltr">+98 938 702 2102</p>
                   </li>
 
                   <li>
-                    <i className="fal fa-phone"></i>
-                    <p>+880 1723 456</p>
-                  </li>
-
-                  <li>
-                    <i className="fal fa-envelope"></i>
+                    <i className="fal fa-envelope" />
                     <p>example@email.com</p>
                   </li>
                 </ul>
@@ -112,25 +113,25 @@ export default function Footer() {
                 <ul className="sigma_social-icons mt-4 justify-content-start">
                   <li>
                     <a href="#">
-                      <i className="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f" />
                     </a>
                   </li>
 
                   <li>
                     <a href="#">
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-twitter" />
                     </a>
                   </li>
 
                   <li>
                     <a href="#">
-                      <i className="fab fa-instagram"></i>
+                      <i className="fab fa-instagram" />
                     </a>
                   </li>
 
                   <li>
                     <a href="#">
-                      <i className="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin" />
                     </a>
                   </li>
                 </ul>
@@ -146,7 +147,7 @@ export default function Footer() {
             <div className="col-sm-4">
               <div className="sigma_footer-copyright text-sm-left mt-0 mb-3 mb-sm-0">
                 <p className="mb-0">
-                  © Hardi -<a href="#">2021</a>
+                  © CharmeGerdoo - <a href="#">2021</a>
                 </p>
               </div>
             </div>

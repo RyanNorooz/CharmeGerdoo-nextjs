@@ -15,16 +15,10 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "types": [
-      "next",
-      "next/types/global",
-      "next/image-types/global"
-      // ...
-    ],
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
