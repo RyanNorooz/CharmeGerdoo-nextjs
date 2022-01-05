@@ -1,18 +1,20 @@
+// ################### Styles ###################
 import 'tailwindcss/tailwind.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import '@/styles/IRANSansX/IRANSansX.css'
-
+import '@/public/fonts/IRANSansX/IRANSansX.css'
+import '@/public/fonts/flaticon/flaticon.css'
+import '@/public/fonts/fontawesome/font-awesome.min.css'
 import '@/styles/globals.scss'
 import '@/styles/style.scss'
 
-import Script from 'next/script'
-import Head from 'next/head'
-
+// ################### Types ###################
 import type { AppProps } from 'next/app'
 import type { NextPage } from 'next'
 import type { ReactElement, ReactNode } from 'react'
 
+// ########## Libraries and Components ##########
+import Script from 'next/script'
+import Head from 'next/head'
 import SEOMetaTags from '@/components/SEOMetaTags'
 
 type NextPageWithLayout = NextPage & {
@@ -34,7 +36,8 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       />
 
       <Head>
-        <SEOMetaTags />
+        {SEOMetaTags}
+        {/* ...*/}
       </Head>
 
       {Layout(<Component {...pageProps} />)}

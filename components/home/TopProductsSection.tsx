@@ -12,7 +12,7 @@ export default function TopProductsSection() {
       description: 'توضیحات بیشتر درباره کیفیت محصول، متریال و ...',
     },
     {
-      id: '1',
+      id: '2',
       thumbnail: '/images/home-2/500-2.jpg',
       title: 'کوله پشتی',
       price: 410000,
@@ -20,7 +20,7 @@ export default function TopProductsSection() {
       description: 'توضیحات بیشتر درباره کیفیت محصول، متریال و ...',
     },
     {
-      id: '1',
+      id: '3',
       thumbnail: '/images/home-2/500-3.jpg',
       title: 'کمربند',
       price: 90000,
@@ -28,7 +28,7 @@ export default function TopProductsSection() {
       description: 'توضیحات بیشتر درباره کیفیت محصول، متریال و ...',
     },
     {
-      id: '1',
+      id: '4',
       thumbnail: '/images/home-2/500-4.jpg',
       title: 'کفش',
       price: 220000,

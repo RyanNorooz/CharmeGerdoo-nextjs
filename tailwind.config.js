@@ -1,15 +1,22 @@
 module.exports = {
-  mode: 'jit',
-  darkMode: 'media', // 'media' or 'class' or false
+  // darkMode: 'media', // 'media' or 'class' or false
 
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    // ...
   ],
 
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-logical'),
     // ...
   ],
+
+  theme: {
+    extend: {
+      fontWeight: {
+        extrablack: 950,
+      },
+    },
+  },
 }
