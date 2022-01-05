@@ -22,7 +22,7 @@ export default function header() {
 
             <ul className="sigma_header-top-nav sigma_header-top-cta">
               <li>
-                <a href="about-us.html">Get Started</a>
+                <a href="about-us.html">درباره ما</a>
               </li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ export default function header() {
 
             <ul className="navbar-nav">
               <li className="menu-item menu-item-has-children">
-                <a href="#">Home pages</a>
+                <a href="#">صفحه اصلی</a>
                 <ul className="sub-menu">
                   <li className="menu-item">
                     <a href="index.html">Home 1</a>
@@ -52,52 +52,52 @@ export default function header() {
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="#">Pages</a>
+                <a href="#">صفحه ها</a>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="about-us.html">About us</a>
+                    <a href="about-us.html">درباره ما</a>
                   </li>
                   <li className="menu-item">
-                    <a href="login.html">Login</a>
+                    <a href="login.html">ورود حساب کاربری</a>
                   </li>
                   <li className="menu-item">
-                    <a href="signup.html">Signup</a>
+                    <a href="signup.html">ساخت حساب کاربری</a>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="#">Shop</a>
+                <a href="#">فروشگاه</a>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="shop.html">Shop</a>
+                    <a href="shop.html">خرید</a>
                   </li>
                   <li className="menu-item">
-                    <a href="product-details.html">Product details</a>
+                    <a href="product-details.html">جزئیات محصول</a>
                   </li>
                   <li className="menu-item">
-                    <a href="cart.html">Cart</a>
+                    <a href="cart.html">سبد خرید</a>
                   </li>
                   <li className="menu-item">
-                    <a href="wishlist.html">Wishlist</a>
+                    <a href="wishlist.html">کالا های مورد علاقه</a>
                   </li>
                   <li className="menu-item">
-                    <a href="checkout.html">Checkout</a>
+                    <a href="checkout.html">نهایی کردن خرید</a>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="blog.html">Blog</a>
+                <a href="blog.html">وبلاگ</a>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="blog-details.html">Blog details</a>
+                    <a href="blog-details.html">جزئیات وبلاگ</a>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item">
-                <a href="contact-us.html">Contact us</a>
+                <a href="contact-us.html">تماس با ما</a>
               </li>
             </ul>
 
@@ -121,8 +121,8 @@ export default function header() {
                   >
                     <i className="far fa-shopping-basket" />
                     <div className="sigma_header-control-cart-inner">
-                      <span>3 Items</span>
-                      <p>129.99$</p>
+                      <span>3 کالا</span>
+                      <p id="total-price">129.99$</p>
                     </div>
                   </a>
                 </li>

@@ -1,4 +1,4 @@
-import DefaultLayout from '@/components/defaultLayout'
+import DefaultLayout from '@/components/DefaultLayout'
 import HeroSection from '@/components/home/HeroSection'
 import CardsSection from '@/components/home/CardsSection'
 import AboutUsSection from '@/components/home/AboutUsSection'
@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <CardsSection />
-      <AboutUsSection />
       <TopProductsSection />
+      <AboutUsSection />
+      <CardsSection />
     </>
   )
 }

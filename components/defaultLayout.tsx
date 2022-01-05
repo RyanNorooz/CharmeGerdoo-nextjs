@@ -1,22 +1,19 @@
 import Head from 'next/head'
 
-import Header from '@/components/header'
-import Footer from '@/components/footer'
+import TheHeader from '@/components/TheHeader'
+import TheFooter from '@/components/TheFooter'
 
-interface LayoutProps /* extends AppProps */ {
-  children: React.ReactNode
-}
-
-export default function DefaultLayout({ children }: LayoutProps) {
+const DefaultLayout: React.FC = function ({ children }) {
   return (
     <>
       <Head>
         <title>Charme Gerdoo</title>
       </Head>
 
-      <Header />
+      <TheHeader />
       <main>{children}</main>
-      <Footer />
+      <TheFooter />
     </>
   )
 }
+export default DefaultLayout
