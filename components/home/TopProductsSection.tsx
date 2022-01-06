@@ -5,7 +5,7 @@ export default function TopProductsSection() {
   const product: Product[] = [
     {
       id: '1',
-      thumbnail: '/images/home-2/500-1.jpg',
+      thumbnail: '/img/home-2/500-1.jpg',
       title: 'کیف پول زنانه',
       price: 210000,
       likes: 1200,
@@ -13,7 +13,7 @@ export default function TopProductsSection() {
     },
     {
       id: '2',
-      thumbnail: '/images/home-2/500-2.jpg',
+      thumbnail: '/img/home-2/500-2.jpg',
       title: 'کوله پشتی',
       price: 410000,
       likes: 1200,
@@ -21,7 +21,7 @@ export default function TopProductsSection() {
     },
     {
       id: '3',
-      thumbnail: '/images/home-2/500-3.jpg',
+      thumbnail: '/img/home-2/500-3.jpg',
       title: 'کمربند',
       price: 90000,
       likes: 1200,
@@ -29,7 +29,7 @@ export default function TopProductsSection() {
     },
     {
       id: '4',
-      thumbnail: '/images/home-2/500-4.jpg',
+      thumbnail: '/img/home-2/500-4.jpg',
       title: 'کفش',
       price: 220000,
       likes: 1200,

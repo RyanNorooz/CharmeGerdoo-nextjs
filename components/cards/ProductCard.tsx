@@ -6,7 +6,7 @@ interface Props {
 
 const dummyProduct: Product = {
   id: '1',
-  thumbnail: '/images/home-2/500-4.jpg',
+  thumbnail: '/img/home-2/500-4.jpg',
   title: 'عنوان کالا',
   price: 50000,
   likes: 1200,

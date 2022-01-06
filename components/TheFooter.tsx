@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
     <footer
       className="sigma_footer style-6 sigma_footer-dark"
-      style={{ backgroundImage: `url("/images/footer.jpg")` }}
+      style={{ backgroundImage: `url("/img/footer.jpg")` }}
     >
       <div className="sigma_footer-middle">
         <div className="container">
@@ -12,7 +13,7 @@ export default function Footer() {
             <div className="col-lg-4">
               <div className="sigma_footer-widget">
                 <div className="sigma_footer-logo mb-4">
-                  <img src="/images/logo-light.png" alt="logo" />
+                  <img src="/img/logo-light.png" alt="logo" />
                 </div>
 
                 <div className="row">
@@ -41,23 +42,33 @@ export default function Footer() {
 
                 <ul className="sigma_footer-links">
                   <li>
-                    <a href="login.html">Account</a>
+                    <Link href="/login">
+                      <a>Account</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="signup.html">Register</a>
+                    <Link href="/signup">
+                      <a>Register</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="shop.html">Ecommerce</a>
+                    <Link href="/shop">
+                      <a>Ecommerce</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="contact-us.html">Help</a>
+                    <Link href="/contact">
+                      <a>Help</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="checkout.html">Checkout</a>
+                    <Link href="/checkout">
+                      <a>Checkout</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -68,23 +79,33 @@ export default function Footer() {
                 <h5 className="widget-title">Company</h5>
                 <ul className="sigma_footer-links">
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="about-us.html">About</a>
+                    <Link href="/about">
+                      <a>About</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="blog.html">Blog</a>
+                    <Link href="/blog">
+                      <a>Blog</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="contact-us.html">Contacts</a>
+                    <Link href="/contact">
+                      <a>Contacts</a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="shop.html">Shop</a>
+                    <Link href="/shop">
+                      <a>Shop</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -155,15 +176,21 @@ export default function Footer() {
             <div className="col-sm-8">
               <ul className="sigma_footer-links justify-content-sm-end">
                 <li>
-                  <a href="about-us.html">About Us</a>
+                  <Link href="/about">
+                    <a>About Us</a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="signup.html">Signup</a>
+                  <Link href="/signup">
+                    <a>Signup</a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="login.html">Login</a>
+                  <Link href="/login">
+                    <a>Login</a>
+                  </Link>
                 </li>
               </ul>
             </div>

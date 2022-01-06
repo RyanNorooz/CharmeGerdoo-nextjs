@@ -6,7 +6,7 @@ export default function AboutUsSection() {
           <div className="col-lg-6">
             <div className="sigma_about style-4">
               <div className="sigma_about-image-1">
-                <img src="/images/home-2/479x600.jpg" alt="img" />
+                <img src="/img/home-2/479x600.jpg" alt="img" />
               </div>
 
               <a

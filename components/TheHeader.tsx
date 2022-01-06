@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function header() {
   return (
     <header className="sigma_header style-1 can-sticky">
@@ -22,7 +24,9 @@ export default function header() {
 
             <ul className="sigma_header-top-nav sigma_header-top-cta">
               <li>
-                <a href="about-us.html">درباره ما</a>
+                <Link href="/about">
+                  <a>درباره ما</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -33,35 +37,51 @@ export default function header() {
         <div className="container">
           <div className="navbar">
             <div className="sigma_logo-wrapper">
-              <a className="sigma_logo" href="index.html">
-                <img src="/images/logo.png" alt="logo" />
-              </a>
+              <Link href="/">
+                <a className="sigma_logo">
+                  <img src="/img/logo.png" alt="logo" />
+                </a>
+              </Link>
             </div>
 
             <ul className="navbar-nav">
               <li className="menu-item menu-item-has-children">
-                <a href="#">صفحه اصلی</a>
+                <Link href="#">
+                  <a>صفحه اصلی</a>
+                </Link>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="index.html">Home 1</a>
+                    <Link href="/">
+                      <a>Home 1</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="home-2.html">Home 2</a>
+                    <Link href="home-2">
+                      <a>Home 2</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="#">صفحه ها</a>
+                <Link href="#">
+                  <a>صفحه ها</a>
+                </Link>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="about-us.html">درباره ما</a>
+                    <Link href="about">
+                      <a>درباره ما</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="login.html">ورود حساب کاربری</a>
+                    <Link href="/login">
+                      <a>ورود حساب کاربری</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="signup.html">ساخت حساب کاربری</a>
+                    <Link href="/signup">
+                      <a>ساخت حساب کاربری</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -70,34 +90,51 @@ export default function header() {
                 <a href="#">فروشگاه</a>
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="shop.html">خرید</a>
+                    <Link href="/shop">
+                      <a>خرید</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="product-details.html">جزئیات محصول</a>
+                    <Link href="/product-details">
+                      <a>جزئیات محصول</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="cart.html">سبد خرید</a>
+                    <Link href="/cart">
+                      <a>سبد خرید</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="wishlist.html">کالا های مورد علاقه</a>
+                    <Link href="/wishlist">
+                      <a>کالا های مورد علاقه</a>
+                    </Link>
                   </li>
                   <li className="menu-item">
-                    <a href="checkout.html">نهایی کردن خرید</a>
+                    <Link href="/checkout">
+                      <a>نهایی کردن خرید</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="blog.html">وبلاگ</a>
+                <Link href="blog">
+                  <a>وبلاگ</a>
+                </Link>
+
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="blog-details.html">جزئیات وبلاگ</a>
+                    <Link href="blog-details">
+                      <a>جزئیات وبلاگ</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item">
-                <a href="contact-us.html">تماس با ما</a>
+                <Link href="contact">
+                  <a>تماس با ما</a>
+                </Link>
               </li>
             </ul>
 
@@ -114,17 +151,15 @@ export default function header() {
                 </li>
 
                 <li className="cart-trigger header-controls-item d-none d-sm-block">
-                  <a
-                    className="sigma_header-control-cart"
-                    title="Your Cart"
-                    href="cart.html"
-                  >
-                    <i className="far fa-shopping-basket" />
-                    <div className="sigma_header-control-cart-inner">
-                      <span>3 کالا</span>
-                      <p id="total-price">129.99$</p>
-                    </div>
-                  </a>
+                  <Link href="/cart">
+                    <a className="sigma_header-control-cart" title="Your Cart">
+                      <i className="far fa-shopping-basket" />
+                      <div className="sigma_header-control-cart-inner">
+                        <span>3 کالا</span>
+                        <p id="total-price">129.99$</p>
+                      </div>
+                    </a>
+                  </Link>
                 </li>
 
                 <li className="aside-toggle aside-trigger">

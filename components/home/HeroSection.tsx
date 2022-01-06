@@ -5,7 +5,7 @@ export default function HeroSection() {
     <div className="sigma_banner style-7">
       <div
         className="bg-center bg-cover banner-slider-inner"
-        style={{ backgroundImage: `url("/images/home-2/1920x900.jpg")` }}
+        style={{ backgroundImage: `url("/img/home-2/1920x900.jpg")` }}
       >
         <div className="sigma_banner-text">
           <div className="container">
@@ -23,7 +23,7 @@ export default function HeroSection() {
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
                   <a href="shop.html">
-                    <img src="/images/home-2/500.jpg" alt="category" />
+                    <img src="/img/home-2/500.jpg" alt="category" />
 
                     <div className="sigma_category-content filter drop-shadow-sm">
                       <h6>Leather Jacket</h6>
@@ -36,7 +36,7 @@ export default function HeroSection() {
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
                   <a href="shop.html">
-                    <img src="/images/home-2/500-0.jpg" alt="category" />
+                    <img src="/img/home-2/500-0.jpg" alt="category" />
 
                     <div className="sigma_category-content filter drop-shadow-sm">
                       <h6>Leather Wallet</h6>
@@ -49,7 +49,7 @@ export default function HeroSection() {
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
                   <a href="shop.html">
-                    <img src="/images/home-2/500-1.jpg" alt="category" />
+                    <img src="/img/home-2/500-1.jpg" alt="category" />
 
                     <div className="sigma_category-content filter drop-shadow-sm">
                       <h6>Leather Shoes</h6>
@@ -62,7 +62,7 @@ export default function HeroSection() {
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
                   <a href="shop.html">
-                    <img src="/images/home-2/500-2.jpg" alt="category" />
+                    <img src="/img/home-2/500-2.jpg" alt="category" />
 
                     <div className="sigma_category-content filter drop-shadow-sm">
                       <h6>Leather Bags</h6>

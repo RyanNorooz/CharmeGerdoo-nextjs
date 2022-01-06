@@ -27,7 +27,7 @@ export default function Header() {
                 <Image
                   layout="fill"
                   // className="object-contain"
-                  src="/images/logo-light.png"
+                  src="/img/logo-light.png"
                   alt="logo"
                   // width={150}
                   // height={50}
