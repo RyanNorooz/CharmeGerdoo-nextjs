@@ -1,4 +1,10 @@
-export default function checkout() {
+import DefaultLayout from '@/components/DefaultLayout'
+
+Checkout.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
+
+export default function Checkout() {
   return (
     <>
       {/* <!--Section Start--> */}

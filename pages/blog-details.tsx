@@ -1,4 +1,9 @@
 import Link from 'next/link'
+import DefaultLayout from '@/components/DefaultLayout'
+
+BlogDetails.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
 
 export default function BlogDetails() {
   return (
@@ -14,10 +19,8 @@ export default function BlogDetails() {
           </div>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <Link>
-                <a className="btn-link" href="#">
-                  Home
-                </a>
+              <Link href="#">
+                <a className="btn-link">Home</a>
               </Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">

@@ -1,3 +1,9 @@
+import DefaultLayout from '@/components/DefaultLayout'
+
+Contact.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
+
 export default function Contact() {
   return (
     <>

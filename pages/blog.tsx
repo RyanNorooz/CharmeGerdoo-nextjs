@@ -1,6 +1,11 @@
 import Link from 'next/link'
 
-export default function blog() {
+import DefaultLayout from '@/components/DefaultLayout'
+Blog.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
+
+export default function Blog() {
   return (
     <>
       {/* <!--Section Start--> */}

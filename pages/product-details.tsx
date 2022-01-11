@@ -1,5 +1,10 @@
 import Link from 'next/link'
 
+import DefaultLayout from '@/components/DefaultLayout'
+ProductDetails.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
+
 export default function ProductDetails() {
   return (
     <>

@@ -1,4 +1,9 @@
 import Link from 'next/link'
+import DefaultLayout from '@/components/DefaultLayout'
+
+Shop.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
 
 export default function Shop() {
   return (

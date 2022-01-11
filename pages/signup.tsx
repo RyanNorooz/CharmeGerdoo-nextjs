@@ -1,3 +1,9 @@
+import DefaultLayout from '@/components/DefaultLayout'
+
+SignUp.layout = (page: React.ReactElement) => (
+  <DefaultLayout>{page}</DefaultLayout>
+)
+
 export default function SignUp() {
   return (
     <>
