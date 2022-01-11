@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ProductDetails() {
   return (
     <>
@@ -12,9 +14,9 @@ export default function ProductDetails() {
           </div>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a className="btn-link" href="#">
-                Home
-              </a>
+              <Link href="#">
+                <a className="btn-link">Home</a>
+              </Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               Product Detail
@@ -79,34 +81,42 @@ export default function ProductDetails() {
                     </strong>
                   </p>
                   <p>
-                    <strong>Tags: </strong> <a href="#">Fashion</a>,{' '}
-                    <a href="#">Leather</a>
+                    <strong>Tags: </strong>
+                    <Link href="#">
+                      <a>Fashion</a>
+                    </Link>
+                    ,
+                    <Link href="#">
+                      <a>Leather</a>
+                    </Link>
                   </p>
                 </div>
                 <hr />
                 <form className="sigma_product-atc-form">
                   <div className="sigma_product-buttons">
-                    <a href="product-details.html" className="ml-0 sigma_btn">
-                      Buy Now <i className="far fa-shopping-basket"></i>{' '}
-                    </a>
-                    <a
-                      href="product-details.html"
-                      data-toggle="tooltip"
-                      title="Wishlist"
-                      className="ml-2 sigma_btn light"
-                    >
-                      {' '}
-                      <i className="m-0 far fa-heart"></i>
-                    </a>
-                    <a
-                      href="product-details.html"
-                      data-toggle="tooltip"
-                      title="Compare"
-                      className="ml-2 sigma_btn light"
-                    >
-                      {' '}
-                      <i className="m-0 far fa-compress"></i>
-                    </a>
+                    <Link href="/product-details">
+                      <a className="ml-0 sigma_btn">
+                        Buy Now <i className="far fa-shopping-basket"></i>
+                      </a>
+                    </Link>
+                    <Link href="/product-details">
+                      <a
+                        data-toggle="tooltip"
+                        title="Wishlist"
+                        className="ml-2 sigma_btn light"
+                      >
+                        <i className="m-0 far fa-heart"></i>
+                      </a>
+                    </Link>
+                    <Link href="/product-details">
+                      <a
+                        data-toggle="tooltip"
+                        title="Compare"
+                        className="ml-2 sigma_btn light"
+                      >
+                        <i className="m-0 far fa-compress"></i>
+                      </a>
+                    </Link>
                   </div>
                 </form>
                 {/* <!-- Post Meta Start --> */}
@@ -115,24 +125,32 @@ export default function ProductDetails() {
                     <h5>Share</h5>
                     <ul className="sigma_sm">
                       <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <i className="fab fa-facebook-f"></i>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <i className="fab fa-linkedin-in"></i>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <i className="fab fa-twitter"></i>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-youtube"></i>
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -150,43 +168,46 @@ export default function ProductDetails() {
           <div className="sigma_product-additional-info">
             <ul className="nav" id="bordered-tab" role="tablist">
               <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  id="tab-product-desc-tab"
-                  data-toggle="pill"
-                  href="#tab-product-desc"
-                  role="tab"
-                  aria-controls="tab-product-desc"
-                  aria-selected="true"
-                >
-                  Description
-                </a>
+                <Link href="#tab-product-desc">
+                  <a
+                    className="nav-link active"
+                    id="tab-product-desc-tab"
+                    data-toggle="pill"
+                    role="tab"
+                    aria-controls="tab-product-desc"
+                    aria-selected="true"
+                  >
+                    Description
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  id="tab-product-info-tab"
-                  data-toggle="pill"
-                  href="#tab-product-info"
-                  role="tab"
-                  aria-controls="tab-product-info"
-                  aria-selected="false"
-                >
-                  Additional Information
-                </a>
+                <Link href="#tab-product-info">
+                  <a
+                    className="nav-link"
+                    id="tab-product-info-tab"
+                    data-toggle="pill"
+                    role="tab"
+                    aria-controls="tab-product-info"
+                    aria-selected="false"
+                  >
+                    Additional Information
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  id="tab-product-reviews-tab"
-                  data-toggle="pill"
-                  href="#tab-product-reviews"
-                  role="tab"
-                  aria-controls="tab-product-reviews"
-                  aria-selected="false"
-                >
-                  Reviews{' '}
-                </a>
+                <Link href="#tab-product-reviews">
+                  <a
+                    className="nav-link"
+                    id="tab-product-reviews-tab"
+                    data-toggle="pill"
+                    role="tab"
+                    aria-controls="tab-product-reviews"
+                    aria-selected="false"
+                  >
+                    Reviews
+                  </a>
+                </Link>
               </li>
             </ul>
             <div className="tab-content" id="bordered-tabContent">
@@ -235,14 +256,12 @@ export default function ProductDetails() {
                   <tbody>
                     <tr>
                       <td>
-                        {' '}
                         <strong>Color</strong>
                       </td>
                       <td>blue, red, yellow, green</td>
                     </tr>
                     <tr>
                       <td>
-                        {' '}
                         <strong>Material</strong>
                       </td>
                       <td>wood, plastic, stainless steel</td>
@@ -326,7 +345,6 @@ export default function ProductDetails() {
                           <i className="fa fa-star"></i>
                         </div>
                         <span>
-                          {' '}
                           <i className="far fa-clock"></i> January 13 2021
                         </span>
                         <p>
@@ -335,10 +353,11 @@ export default function ProductDetails() {
                           corporate strategy foster collaborative thinking to
                           further the overall value proposition.
                         </p>
-                        <a href="#" className="btn-link">
-                          {' '}
-                          Reply <i className="far fa-reply"></i>{' '}
-                        </a>
+                        <Link href="#">
+                          <a className="btn-link">
+                            Reply <i className="far fa-reply"></i>
+                          </a>
+                        </Link>
                       </div>
                     </li>
                     <li className="comment-item">
@@ -356,17 +375,17 @@ export default function ProductDetails() {
                           <i className="fa fa-star"></i>
                         </div>
                         <span>
-                          {' '}
                           <i className="far fa-clock"></i> December 27 2021
                         </span>
                         <p>
                           Leverage agile frameworks to provide a robust synopsis
                           for high level overviews. Iterative approaches
                         </p>
-                        <a href="#" className="btn-link">
-                          {' '}
-                          Reply <i className="far fa-reply"></i>{' '}
-                        </a>
+                        <Link href="#">
+                          <a className="btn-link">
+                            Reply <i className="far fa-reply"></i>
+                          </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -437,31 +456,34 @@ export default function ProductDetails() {
                         </strong>
                       </p>
                       <p>
-                        <strong>Tags: </strong> <a href="#">Fashion</a>,{' '}
-                        <a href="#">Classic</a>
+                        <strong>Tags: </strong>
+                        <Link href="#">
+                          <a>Fashion</a>
+                        </Link>
+                        ,
+                        <Link href="#">
+                          <a>Classic</a>
+                        </Link>
                       </p>
                     </div>
                     <hr />
                     <form className="sigma_product-atc-form">
                       <div className="sigma_product-buttons d-block">
-                        <a
-                          href="product-details.html"
-                          className="ml-0 btn-block sigma_btn"
-                        >
-                          Buy Now <i className="far fa-shopping-basket"></i>{' '}
-                        </a>
-                        <a
-                          href="product-details.html"
-                          className="ml-0 btn-block sigma_btn light"
-                        >
-                          Wishlist <i className="far fa-heart"></i>{' '}
-                        </a>
-                        <a
-                          href="product-details.html"
-                          className="ml-0 btn-block sigma_btn light"
-                        >
-                          Compare <i className="far fa-compress"></i>{' '}
-                        </a>
+                        <Link href="/product-details">
+                          <a className="ml-0 btn-block sigma_btn">
+                            Buy Now <i className="far fa-shopping-basket"></i>
+                          </a>
+                        </Link>
+                        <Link href="/product-details">
+                          <a className="ml-0 btn-block sigma_btn light">
+                            Wishlist <i className="far fa-heart"></i>
+                          </a>
+                        </Link>
+                        <Link href="/product-details">
+                          <a className="ml-0 btn-block sigma_btn light">
+                            Compare <i className="far fa-compress"></i>
+                          </a>
+                        </Link>
                       </div>
                     </form>
                     {/* <!-- Post Meta Start --> */}
@@ -470,24 +492,32 @@ export default function ProductDetails() {
                         <h5>Share</h5>
                         <ul className="sigma_sm">
                           <li>
-                            <a href="#">
-                              <i className="fab fa-facebook-f"></i>
-                            </a>
+                            <Link href="#">
+                              <a>
+                                <i className="fab fa-facebook-f"></i>
+                              </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-linkedin-in"></i>
-                            </a>
+                            <Link href="#">
+                              <a>
+                                <i className="fab fa-linkedin-in"></i>
+                              </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-twitter"></i>
-                            </a>
+                            <Link href="#">
+                              <a>
+                                <i className="fab fa-twitter"></i>
+                              </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-youtube"></i>
-                            </a>
+                            <Link href="#">
+                              <a>
+                                <i className="fab fa-youtube"></i>
+                              </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Header() {
@@ -9,45 +10,51 @@ export default function Header() {
             <div className="sigma_header-top-links important-links d-none d-md-block">
               <ul className="sigma_header-top-nav">
                 <li>
-                  <a href="#">
-                    <i className="fal fa-phone" />
-                    <div className="links-inner">
-                      <p>Our Address</p>
-                      <p>
-                        <b>Drive Chicago IL</b>
-                      </p>
-                    </div>
-                  </a>
+                  <Link href="#">
+                    <a>
+                      <i className="fal fa-phone" />
+                      <div className="links-inner">
+                        <p>Our Address</p>
+                        <p>
+                          <b>Drive Chicago IL</b>
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="sigma_logo-wrapper">
-              <a className="sigma_logo" href="index.html">
-                <Image
-                  layout="fill"
-                  // className="object-contain"
-                  src="/img/logo-light.png"
-                  alt="logo"
-                  // width={150}
-                  // height={50}
-                />
-              </a>
+              <Link href="/">
+                <a className="sigma_logo">
+                  <Image
+                    layout="fill"
+                    // className="object-contain"
+                    src="/img/logo-light.png"
+                    alt="logo"
+                    // width={150}
+                    // height={50}
+                  />
+                </a>
+              </Link>
             </div>
 
             <div className="sigma_header-controls style-1 d-flex align-items-center">
               <div className="sigma_header-top-links important-links d-none d-md-block">
                 <ul className="sigma_header-top-nav">
                   <li>
-                    <a href="#">
-                      <i className="fal fa-map-marker-alt" />
-                      <div className="links-inner">
-                        <p>Call Us</p>
-                        <p>
-                          <b>224-359-5495</b>
-                        </p>
-                      </div>
-                    </a>
+                    <Link href="#">
+                      <a>
+                        <i className="fal fa-map-marker-alt" />
+                        <div className="links-inner">
+                          <p>Call Us</p>
+                          <p>
+                            <b>224-359-5495</b>
+                          </p>
+                        </div>
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -69,75 +76,107 @@ export default function Header() {
           <div className="navbar">
             <ul className="navbar-nav">
               <li className="menu-item menu-item-has-children">
-                <a href="#">Home pages</a>
+                <Link href="#">
+                  <a>Home pages</a>
+                </Link>
 
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="index.html">Home 1</a>
+                    <Link href="/">
+                      <a>Home 1</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="home-2.html">Home 2</a>
+                    <Link href="/home-2">
+                      <a>Home 2</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="#">Pages</a>
+                <Link href="#">
+                  <a>Pages</a>
+                </Link>
 
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="about-us.html">About us</a>
+                    <Link href="/about">
+                      <a>About us</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="login.html">Login</a>
+                    <Link href="/login">
+                      <a>Login</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="signup.html">Signup</a>
+                    <Link href="/signup">
+                      <a>Signup</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="#">Shop</a>
+                <Link href="#">
+                  <a>Shop</a>
+                </Link>
 
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="shop.html">Shop</a>
+                    <Link href="/shop">
+                      <a>Shop</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="product-details.html">Product details</a>
+                    <Link href="/product-details">
+                      <a>Product details</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="cart.html">Cart</a>
+                    <Link href="/cart">
+                      <a>Cart</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="wishlist.html">Wishlist</a>
+                    <Link href="/wishlist">
+                      <a>Wishlist</a>
+                    </Link>
                   </li>
 
                   <li className="menu-item">
-                    <a href="checkout.html">Checkout</a>
+                    <Link href="/checkout">
+                      <a>Checkout</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item menu-item-has-children">
-                <a href="blog.html">Blog</a>
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
 
                 <ul className="sub-menu">
                   <li className="menu-item">
-                    <a href="blog-details.html">Blog details</a>
+                    <Link href="/blog-details">
+                      <a>Blog details</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="menu-item">
-                <a href="contact-us.html">Contact us</a>
+                <Link href="/contact">
+                  <a>Contact us</a>
+                </Link>
               </li>
             </ul>
 
@@ -158,13 +197,11 @@ export default function Header() {
                 </li>
 
                 <li className="cart-trigger header-controls-item d-none d-sm-block">
-                  <a
-                    className="sigma_header-control-cart"
-                    title="Your Cart"
-                    href="cart.html"
-                  >
-                    <i className="fal fa-shopping-bag" />
-                  </a>
+                  <Link href="/cart">
+                    <a className="sigma_header-control-cart" title="Your Cart">
+                      <i className="fal fa-shopping-bag" />
+                    </a>
+                  </Link>
                 </li>
 
                 <li className="aside-toggle aside-trigger-right desktop-toggler">

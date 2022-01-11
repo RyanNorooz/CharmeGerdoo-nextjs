@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function AboutUsSection() {
   return (
     <div className="section">
@@ -22,7 +24,7 @@ export default function AboutUsSection() {
               <div className="section-title">
                 <span className="subtitle">درباره ما</span>
                 <h3 className="title">
-                  چرم گردو همراه با +10 سال{' '}
+                  چرم گردو همراه با +10 سال
                   <span className="primary-color">تجربه</span>
                 </h3>
               </div>
@@ -35,10 +37,9 @@ export default function AboutUsSection() {
                   طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
                   و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
                 </p>
-
-                <a href="about-us.html" className="sigma_btn">
-                  ادامه مطلب
-                </a>
+                <Link href="/about">
+                  <a className="sigma_btn">ادامه مطلب</a>
+                </Link>
               </div>
             </div>
           </div>

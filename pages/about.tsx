@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function About() {
   return (
     <>
@@ -51,7 +53,7 @@ export default function About() {
                 <div className="section-title">
                   <span className="subtitle">About us</span>
                   <h3 className="title">
-                    Better Leather,{' '}
+                    Better Leather,
                     <span className="primary-color">Easy Life</span>
                   </h3>
                   <h5>If You Get Better Leather, You Can Enjoy a Easy Age</h5>
@@ -61,9 +63,9 @@ export default function About() {
                     Leather is a durable and flexible material created by
                     tanning animal rawhide and skins.
                   </p>
-                  <a href="contact-us.html" className="sigma_btn">
-                    Contact Us
-                  </a>
+                  <Link href="/contact">
+                    <a className="sigma_btn">Contact Us</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -249,14 +251,18 @@ export default function About() {
           <div className="row pt-0 pt-lg-5 ">
             <div className="col-lg-4 col-md-6">
               <article className="sigma_post style-13">
-                <a href="blog-details.html" className="sigma_post-date">
-                  <span>24</span>
-                  Jun
-                </a>
-                <div className="sigma_post-thumb">
-                  <a href="blog-details.html" className="d-block">
-                    <img src="/img/about-us/350x300.jpg" alt="img" />
+                <Link href="/blog-details">
+                  <a className="sigma_post-date">
+                    <span>24</span>
+                    Jun
                   </a>
+                </Link>
+                <div className="sigma_post-thumb">
+                  <Link href="/blog-details">
+                    <a className="d-block">
+                      <img src="/img/about-us/350x300.jpg" alt="img" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-meta">
@@ -273,9 +279,9 @@ export default function About() {
                   </div>
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        Tips For The Best Leather Product In The City
-                      </a>
+                      <Link href="/blog-details">
+                        <a>Tips For The Best Leather Product In The City</a>
+                      </Link>
                     </h5>
                     <p className="m-0">
                       Leather is a durable and flexible material created by
@@ -287,14 +293,18 @@ export default function About() {
             </div>
             <div className="col-lg-4 col-md-6">
               <article className="sigma_post style-13">
-                <a href="blog-details.html" className="sigma_post-date">
-                  <span>22</span>
-                  Apr
-                </a>
-                <div className="sigma_post-thumb">
-                  <a href="blog-details.html" className="d-block">
-                    <img src="/img/about-us/350x300-0.jpg" alt="img" />
+                <Link href="/blog-details">
+                  <a className="sigma_post-date">
+                    <span>22</span>
+                    Apr
                   </a>
+                </Link>
+                <div className="sigma_post-thumb">
+                  <Link href="/blog-details">
+                    <a className="d-block">
+                      <img src="/img/about-us/350x300-0.jpg" alt="img" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-meta">
@@ -311,9 +321,9 @@ export default function About() {
                   </div>
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        Dealing In Diffrent Types Of Leather Products
-                      </a>
+                      <Link href="/blog-details">
+                        <a>Dealing In Diffrent Types Of Leather Products</a>
+                      </Link>
                     </h5>
                     <p className="m-0">
                       Leather is a durable and flexible material created by
@@ -325,14 +335,18 @@ export default function About() {
             </div>
             <div className="col-lg-4 col-md-6">
               <article className="sigma_post style-13">
-                <a href="blog-details.html" className="sigma_post-date">
-                  <span>12</span>
-                  Jan
-                </a>
-                <div className="sigma_post-thumb">
-                  <a href="blog-details.html" className="d-block">
-                    <img src="/img/about-us/350x300-1.jpg" alt="img" />
+                <Link href="/blog-details">
+                  <a className="sigma_post-date">
+                    <span>12</span>
+                    Jan
                   </a>
+                </Link>
+                <div className="sigma_post-thumb">
+                  <Link href="/blog-details">
+                    <a className="d-block">
+                      <img src="/img/about-us/350x300-1.jpg" alt="img" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-meta">
@@ -349,9 +363,9 @@ export default function About() {
                   </div>
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        A Beautiful Leather Sofa From Our Side
-                      </a>
+                      <Link href="/blog-details">
+                        <a>A Beautiful Leather Sofa From Our Side</a>
+                      </Link>
                     </h5>
                     <p className="m-0">
                       Leather is a durable and flexible material created by

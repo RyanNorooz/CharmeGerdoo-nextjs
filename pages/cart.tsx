@@ -53,22 +53,19 @@ export default function Cart() {
                     <img src="/img/cart/70.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Shoes</a>{' '}
+                        <a href="#">Leather Shoes</a>
                       </h6>
                       <p>1 Pieces</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>12.99$</strong>
                 </td>
                 <td className="quantity" data-title="Quantity">
                   <input type="number" className="qty form-control" value="1" />
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>12.99$</strong>
                 </td>
               </tr>
@@ -87,22 +84,19 @@ export default function Cart() {
                     <img src="/img/cart/70-0.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Belt</a>{' '}
+                        <a href="#">Leather Belt</a>
                       </h6>
                       <p>2 Piece</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>9.99$</strong>
                 </td>
                 <td className="quantity" data-title="Quantity">
                   <input type="number" className="qty form-control" value="1" />
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>9.99$</strong>
                 </td>
               </tr>
@@ -121,22 +115,19 @@ export default function Cart() {
                     <img src="/img/cart/70-1.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Bag</a>{' '}
+                        <a href="#">Leather Bag</a>
                       </h6>
                       <p>3 Pieces</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>13.99$</strong>
                 </td>
                 <td className="quantity" data-title="Quantity">
                   <input type="number" className="qty form-control" value="1" />
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>13.99$</strong>
                 </td>
               </tr>

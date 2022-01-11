@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -22,53 +23,61 @@ export default function HeroSection() {
             <div className="row d-none d-md-flex">
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
-                  <a href="shop.html">
-                    <img src="/img/home-2/500.jpg" alt="category" />
+                  <Link href="/shop">
+                    <a>
+                      <img src="/img/home-2/500.jpg" alt="category" />
 
-                    <div className="sigma_category-content filter drop-shadow-sm">
-                      <h6>Leather Jacket</h6>
-                      <span>345 Items</span>
-                    </div>
-                  </a>
+                      <div className="sigma_category-content filter drop-shadow-sm">
+                        <h6>Leather Jacket</h6>
+                        <span>345 Items</span>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
-                  <a href="shop.html">
-                    <img src="/img/home-2/500-0.jpg" alt="category" />
+                  <Link href="/shop">
+                    <a>
+                      <img src="/img/home-2/500-0.jpg" alt="category" />
 
-                    <div className="sigma_category-content filter drop-shadow-sm">
-                      <h6>Leather Wallet</h6>
-                      <span>229 Items</span>
-                    </div>
-                  </a>
+                      <div className="sigma_category-content filter drop-shadow-sm">
+                        <h6>Leather Wallet</h6>
+                        <span>229 Items</span>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
-                  <a href="shop.html">
-                    <img src="/img/home-2/500-1.jpg" alt="category" />
+                  <Link href="/shop">
+                    <a>
+                      <img src="/img/home-2/500-1.jpg" alt="category" />
 
-                    <div className="sigma_category-content filter drop-shadow-sm">
-                      <h6>Leather Shoes</h6>
-                      <span>141 Items</span>
-                    </div>
-                  </a>
+                      <div className="sigma_category-content filter drop-shadow-sm">
+                        <h6>Leather Shoes</h6>
+                        <span>141 Items</span>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-4">
                 <div className="sigma_category style-3">
-                  <a href="shop.html">
-                    <img src="/img/home-2/500-2.jpg" alt="category" />
+                  <Link href="/shop">
+                    <a>
+                      <img src="/img/home-2/500-2.jpg" alt="category" />
 
-                    <div className="sigma_category-content filter drop-shadow-sm">
-                      <h6>Leather Bags</h6>
-                      <span>428 Items</span>
-                    </div>
-                  </a>
+                      <div className="sigma_category-content filter drop-shadow-sm">
+                        <h6>Leather Bags</h6>
+                        <span>428 Items</span>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

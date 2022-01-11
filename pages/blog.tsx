@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function blog() {
   return (
     <>
@@ -32,19 +34,23 @@ export default function blog() {
               {/* <!-- style 8 --> */}
               <article className="sigma_post style-8">
                 <div className="sigma_post-thumb">
-                  <a href="blog-details.html">
-                    <img src="/img/blog/350x250.jpg" alt="img" />
-                  </a>
+                  <Link href="/blog-details">
+                    <a>
+                      <img src="/img/blog/350x250.jpg" alt="img" />
+                    </a>
+                  </Link>
                   <div className="sigma_post-categories">
                     <a href="#" className="sigma_post-category">
-                      Leather{' '}
+                      Leather
                     </a>
                   </div>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">Leather Fashion Style</a>
+                      <Link href="/blog-details">
+                        <a>Leather Fashion Style</a>
+                      </Link>
                     </h5>
                     <p>
                       Leather is a durable and flexible material created by
@@ -56,15 +62,19 @@ export default function blog() {
                         <li>
                           <span>TA</span>
                           <div>
-                            <a href="#" className="author-name">
-                              Tim Abell
-                            </a>
-                            <a href="blog-details.html">June 4, 2021</a>
+                            <Link href="#">
+                              <a className="author-name">Tim Abell</a>
+                            </Link>
+                            <Link href="/blog-details">
+                              <a>June 4, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">572</a>
+                          <Link href="#">
+                            <a>572</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -79,16 +89,16 @@ export default function blog() {
                   <img src="/img/blog/350x250-3.jpg" alt="img" />
                 </div>
                 <div className="sigma_post-categories">
-                  <a href="#" className="sigma_post-category">
-                    Leather{' '}
-                  </a>
+                  <Link href="#">
+                    <a className="sigma_post-category">Leather</a>
+                  </Link>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        Dealing In Leather Shoes And Bags
-                      </a>
+                      <Link href="/blog-details">
+                        <a>Dealing In Leather Shoes And Bags</a>
+                      </Link>
                     </h5>
                     <p>
                       Leather is a durable and flexible material created by
@@ -103,12 +113,16 @@ export default function blog() {
                             <a href="#" className="author-name">
                               Joseph Hardy
                             </a>
-                            <a href="blog-details.html">April 12, 2021</a>
+                            <Link href="/blog-details">
+                              <a>April 12, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">452</a>
+                          <Link href="#">
+                            <a>452</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -120,10 +134,12 @@ export default function blog() {
                   <div className="sigma_post-content">
                     <h5>Infinitely Creative Solutions.</h5>
                     <div className="sigma_post-meta">
-                      <a href="#">
-                        <i className="fal fa-link"></i>
-                        www.yourlink.com
-                      </a>
+                      <Link href="#">
+                        <a>
+                          <i className="fal fa-link"></i>
+                          www.yourlink.com
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -134,9 +150,9 @@ export default function blog() {
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        Leather Fashion Offer Of The Month
-                      </a>
+                      <Link href="/blog-details">
+                        <a>Leather Fashion Offer Of The Month</a>
+                      </Link>
                     </h5>
                     <p>
                       The leather manufacturing process is divided into three
@@ -150,15 +166,19 @@ export default function blog() {
                         <li>
                           <span>SH</span>
                           <div>
-                            <a href="#" className="author-name">
-                              Sarah Henry
-                            </a>
-                            <a href="blog-details.html">August 7, 2021</a>
+                            <Link href="#">
+                              <a className="author-name">Sarah Henry</a>
+                            </Link>
+                            <Link href="/blog-details">
+                              <a>August 7, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">820</a>
+                          <Link href="#">
+                            <a>820</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -179,21 +199,23 @@ export default function blog() {
               </article>
               <article className="sigma_post style-8">
                 <div className="sigma_post-thumb">
-                  <a href="blog-details.html">
-                    <img src="/img/blog/350x250-4.jpg" alt="img" />
-                  </a>
-                  <div className="sigma_post-categories">
-                    <a href="#" className="sigma_post-category">
-                      Leather{' '}
+                  <Link href="/blog-details">
+                    <a>
+                      <img src="/img/blog/350x250-4.jpg" alt="img" />
                     </a>
+                  </Link>
+                  <div className="sigma_post-categories">
+                    <Link href="#">
+                      <a className="sigma_post-category">Leather</a>
+                    </Link>
                   </div>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">
-                        Man Love Leather Collection
-                      </a>
+                      <Link href="/blog-details">
+                        <a>Man Love Leather Collection</a>
+                      </Link>
                     </h5>
                     <p>
                       Leather is a durable and flexible material created by
@@ -205,15 +227,19 @@ export default function blog() {
                         <li>
                           <span>AS</span>
                           <div>
-                            <a href="#" className="author-name">
-                              Andrew Simon
-                            </a>
-                            <a href="blog-details.html">Novemvber 6, 2021</a>
+                            <Link href="#">
+                              <a className="author-name">Andrew Simon</a>
+                            </Link>
+                            <Link href="/blog-details">
+                              <a>Novemvber 6, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">572</a>
+                          <Link href="#">
+                            <a>572</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -224,9 +250,11 @@ export default function blog() {
             <div className="col-lg-4 col-md-6">
               <article className="sigma_post post-format-video style-8">
                 <div className="sigma_post-thumb">
-                  <a href="blog-details.html">
-                    <img src="/img/blog/730x415.jpg" alt="img" />
-                  </a>
+                  <Link href="/blog-details">
+                    <a>
+                      <img src="/img/blog/730x415.jpg" alt="img" />
+                    </a>
+                  </Link>
                   <a
                     href="https://www.youtube.com/watch?v=EEJFMdfraVY"
                     className="sigma_video-btn popup-video"
@@ -234,15 +262,17 @@ export default function blog() {
                     <i className="far fa-play"></i>
                   </a>
                   <div className="sigma_post-categories">
-                    <a href="#" className="sigma_post-category">
-                      Leather{' '}
-                    </a>
+                    <Link href="#">
+                      <a className="sigma_post-category">Leather</a>
+                    </Link>
                   </div>
                 </div>
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="blog-details.html">Video Post</a>
+                      <Link href="/blog-details">
+                        <a>Video Post</a>
+                      </Link>
                     </h5>
                     <p>
                       Leather is a durable and flexible material created by
@@ -254,15 +284,19 @@ export default function blog() {
                         <li>
                           <span>TA</span>
                           <div>
-                            <a href="#" className="author-name">
-                              Tim Abell
-                            </a>
-                            <a href="blog-details.html">June 4, 2021</a>
+                            <Link href="#">
+                              <a className="author-name">Tim Abell</a>
+                            </Link>
+                            <Link href="/blog-details">
+                              <a>June 4, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">572</a>
+                          <Link href="#">
+                            <a>572</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -281,7 +315,9 @@ export default function blog() {
                 <div className="sigma_post-body">
                   <div className="sigma_post-content">
                     <h5>
-                      <a href="#">Audio Post</a>
+                      <Link href="#">
+                        <a>Audio Post</a>
+                      </Link>
                     </h5>
                     <p>
                       Leather is a durable and flexible material created by
@@ -293,15 +329,19 @@ export default function blog() {
                         <li>
                           <span>TO</span>
                           <div>
-                            <a href="#" className="author-name">
-                              Thomas Otto
-                            </a>
-                            <a href="#">December 16, 2021</a>
+                            <Link href="#">
+                              <a className="author-name">Thomas Otto</a>
+                            </Link>
+                            <Link href="#">
+                              <a>December 16, 2021</a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <i className="fal fa-comment-dots"></i>
-                          <a href="#">660</a>
+                          <Link href="#">
+                            <a>660</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -325,29 +365,35 @@ export default function blog() {
           {/* <!-- Pagination Start --> */}
           <ul className="pagination">
             <li className="page-item">
-              <a className="page-link" href="#">
-                <i className="fal fa-chevron-double-left"></i>
-              </a>
+              <Link href="#">
+                <a className="page-link">
+                  <i className="fal fa-chevron-double-left"></i>
+                </a>
+              </Link>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
-                1
-              </a>
+              <Link href="#">
+                <a className="page-link">1</a>
+              </Link>
             </li>
             <li className="page-item active">
-              <a className="page-link" href="#">
-                2 <span className="sr-only">(current)</span>
-              </a>
+              <Link href="#">
+                <a className="page-link">
+                  2 <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
-                3
-              </a>
+              <Link href="#">
+                <a className="page-link">3</a>
+              </Link>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#">
-                <i className="fal fa-chevron-double-right"></i>
-              </a>
+              <Link href="#">
+                <a className="page-link">
+                  <i className="fal fa-chevron-double-right"></i>
+                </a>
+              </Link>
             </li>
           </ul>
           {/* <!-- Pagination End --> */}

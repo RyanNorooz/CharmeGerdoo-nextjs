@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Product } from '@/lib/product'
 
 interface Props {
@@ -29,7 +30,9 @@ export default function ProductCard(props: Props) {
 
         <div className="sigma_product-body">
           <h5 className="sigma_product-title">
-            <a href="product-details.html">{props.product.title}</a>
+            <Link href="/product-details">
+              <a>{props.product.title}</a>
+            </Link>
           </h5>
 
           <div className="sigma_product-price">

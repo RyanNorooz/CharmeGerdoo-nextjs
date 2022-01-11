@@ -556,7 +556,7 @@ export default function checkout() {
                   <div className="d-flex align-items-center mt-2">
                     <input type="checkbox" id="checkbox" name="checkbox" />
                     <label className="mb-0" htmlFor="checkbox">
-                      I accept <a href="#">Terms</a> and{' '}
+                      I accept <a href="#">Terms</a> and
                       <a href="#">conditions</a> and general policy
                     </label>
                   </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function BlogDetails() {
   return (
     <>
@@ -12,9 +14,11 @@ export default function BlogDetails() {
           </div>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a className="btn-link" href="#">
-                Home
-              </a>
+              <Link>
+                <a className="btn-link" href="#">
+                  Home
+                </a>
+              </Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               Blog Detail
@@ -32,7 +36,7 @@ export default function BlogDetails() {
                 <div className="entry-content">
                   <div className="sigma_post-details-categories">
                     <a href="#" className="sigma_post-category">
-                      Leather{' '}
+                      Leather
                     </a>
                   </div>
                   <h2 className="entry-title">
@@ -40,15 +44,12 @@ export default function BlogDetails() {
                   </h2>
                   <div className="sigma_post-details-meta">
                     <span>
-                      {' '}
                       <i className="far fa-eye"></i> 131 Views
                     </span>
                     <span>
-                      {' '}
                       <i className="far fa-comments"></i> 2 Comments
                     </span>
                     <span>
-                      {' '}
                       <i className="far fa-calendar"></i> March 12, 2021
                     </span>
                   </div>
@@ -217,12 +218,14 @@ export default function BlogDetails() {
                     <div className="col-md-6">
                       <article className="sigma_post style-1">
                         <div className="sigma_post-thumb">
-                          <a href="blog-details.html">
-                            <img
-                              src="/img/blog-details/350x300.jpg"
-                              alt="img"
-                            />
-                          </a>
+                          <Link href="/blog-details">
+                            <a>
+                              <img
+                                src="/img/blog-details/350x300.jpg"
+                                alt="img"
+                              />
+                            </a>
+                          </Link>
                         </div>
                         <div className="sigma_post-body">
                           <div className="sigma_post-meta">
@@ -234,29 +237,32 @@ export default function BlogDetails() {
                                 <a href="#">Leather </a>
                               </li>
                             </ul>
-                            <a
-                              href="blog-details.html"
-                              className="sigma_post-date"
-                            >
-                              24 <br />
-                              Apr
-                            </a>
+                            <Link href="/blog-details">
+                              <a className="sigma_post-date">
+                                24 <br />
+                                Apr
+                              </a>
+                            </Link>
                           </div>
                           <div className="sigma_post-content">
                             <h5>
-                              <a href="blog-details.html">
-                                Tips For The Best Leather Boots In The City
-                              </a>
+                              <Link href="/blog-details">
+                                <a>
+                                  Tips For The Best Leather Boots In The City
+                                </a>
+                              </Link>
                             </h5>
                             <p className="m-0">
                               Leather is a durable and flexible material created
                               by tanning animal rawhide and skins. The most
                               common raw material .
                             </p>
-                            <a href="blog-details.html" className="btn-link">
-                              Read More
-                              <i className="far fa-angle-right"></i>
-                            </a>
+                            <Link href="/blog-details">
+                              <a className="btn-link">
+                                Read More
+                                <i className="far fa-angle-right"></i>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </article>
@@ -266,12 +272,14 @@ export default function BlogDetails() {
                     <div className="col-md-6">
                       <article className="sigma_post style-1">
                         <div className="sigma_post-thumb">
-                          <a href="blog-details.html">
-                            <img
-                              src="/img/blog-details/350x300-0.jpg"
-                              alt="img"
-                            />
-                          </a>
+                          <Link href="/blog-details">
+                            <a>
+                              <img
+                                src="/img/blog-details/350x300-0.jpg"
+                                alt="img"
+                              />
+                            </a>
+                          </Link>
                         </div>
                         <div className="sigma_post-body">
                           <div className="sigma_post-meta">
@@ -283,29 +291,32 @@ export default function BlogDetails() {
                                 <a href="#">Leather </a>
                               </li>
                             </ul>
-                            <a
-                              href="blog-details.html"
-                              className="sigma_post-date"
-                            >
-                              12 <br />
-                              Jan
-                            </a>
+                            <Link href="/blog-details">
+                              <a className="sigma_post-date">
+                                12 <br />
+                                Jan
+                              </a>
+                            </Link>
                           </div>
                           <div className="sigma_post-content">
                             <h5>
-                              <a href="blog-details.html">
-                                Dealing In Diffrent Types Of Leather Products
-                              </a>
+                              <Link href="/blog-details">
+                                <a>
+                                  Dealing In Diffrent Types Of Leather Products
+                                </a>
+                              </Link>
                             </h5>
                             <p className="m-0">
                               Leather is a durable and flexible material created
                               by tanning animal rawhide and skins. The most
                               common raw material .
                             </p>
-                            <a href="blog-details.html" className="btn-link">
-                              Read More
-                              <i className="far fa-angle-right"></i>
-                            </a>
+                            <Link href="/blog-details">
+                              <a className="btn-link">
+                                Read More
+                                <i className="far fa-angle-right"></i>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </article>
@@ -371,7 +382,6 @@ export default function BlogDetails() {
                         <div className="comment-body">
                           <h5>Robert John</h5>
                           <span>
-                            {' '}
                             <i className="far fa-clock"></i> January 13 2021
                           </span>
                           <p>
@@ -383,8 +393,7 @@ export default function BlogDetails() {
                             techniques.
                           </p>
                           <a href="#" className="btn-link">
-                            {' '}
-                            Reply <i className="far fa-reply"></i>{' '}
+                            Reply <i className="far fa-reply"></i>
                           </a>
                         </div>
                       </li>
@@ -396,7 +405,6 @@ export default function BlogDetails() {
                         <div className="comment-body">
                           <h5>Christine Hill</h5>
                           <span>
-                            {' '}
                             <i className="far fa-clock"></i> December 27 2021
                           </span>
                           <p>
@@ -407,8 +415,7 @@ export default function BlogDetails() {
                             to be killed.
                           </p>
                           <a href="#" className="btn-link">
-                            {' '}
-                            Reply <i className="far fa-reply"></i>{' '}
+                            Reply <i className="far fa-reply"></i>
                           </a>
                         </div>
                       </li>
@@ -525,54 +532,68 @@ export default function BlogDetails() {
                 <div className="widget widget-sigma-recent-posts">
                   <h5 className="widget-title">Most Commented</h5>
                   <div className="sigma_recent-post">
-                    <a href="blog-details.html" className="recent-post-image">
-                      <img src="/img/blog-details/80x80.jpg" alt="img" />
-                      <span>12</span>
-                    </a>
+                    <Link href="/blog-details">
+                      <a className="recent-post-image">
+                        <img src="/img/blog-details/80x80.jpg" alt="img" />
+                        <span>12</span>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          Every Next Level Of Leather Products We Have
-                        </a>
+                        <Link href="/blog-details">
+                          <a>Every Next Level Of Leather Products We Have</a>
+                        </Link>
                       </h6>
-                      <a href="blog-details.html" className="date">
-                        <i className="far fa-clock mr-2"></i>
-                        June 4, 2021
-                      </a>
+                      <Link href="/blog-details">
+                        <a className="date">
+                          <i className="far fa-clock mr-2"></i>
+                          June 4, 2021
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="sigma_recent-post">
-                    <a href="blog-details.html" className="recent-post-image">
-                      <img src="/img/blog-details/80x80-0.jpg" alt="img" />
-                      <span>9</span>
-                    </a>
+                    <Link href="/blog-details">
+                      <a className="recent-post-image">
+                        <img src="/img/blog-details/80x80-0.jpg" alt="img" />
+                        <span>9</span>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          This is a test Fire Origional Leather Will Not Burn
-                        </a>
+                        <Link href="/blog-details">
+                          <a>
+                            This is a test Fire Origional Leather Will Not Burn
+                          </a>
+                        </Link>
                       </h6>
-                      <a href="blog-details.html" className="date">
-                        <i className="far fa-clock mr-2"></i>
-                        March 19, 2021
-                      </a>
+                      <Link href="/blog-details">
+                        <a className="date">
+                          <i className="far fa-clock mr-2"></i>
+                          March 19, 2021
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="sigma_recent-post">
-                    <a href="blog-details.html" className="recent-post-image">
-                      <img src="/img/blog-details/80x80-1.jpg" alt="img" />
-                      <span>6</span>
-                    </a>
+                    <Link href="/blog-details">
+                      <a className="recent-post-image">
+                        <img src="/img/blog-details/80x80-1.jpg" alt="img" />
+                        <span>6</span>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          Specializing in Discounted Leather
-                        </a>
+                        <Link href="/blog-details">
+                          <a>Specializing in Discounted Leather</a>
+                        </Link>
                       </h6>
-                      <a href="blog-details.html" className="date">
-                        <i className="far fa-clock mr-2"></i>
-                        November 12, 2021
-                      </a>
+                      <Link href="/blog-details">
+                        <a className="date">
+                          <i className="far fa-clock mr-2"></i>
+                          November 12, 2021
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -594,36 +615,46 @@ export default function BlogDetails() {
                 <div className="widget widget-sigma-recent-posts style-2">
                   <h5 className="widget-title">Recommended</h5>
                   <div className="sigma_recent-post">
-                    <a href="blog-details.html" className="recent-post-image">
-                      <img src="/img/blog-details/325x150.jpg" alt="img" />
-                    </a>
+                    <Link href="/blog-details">
+                      <a className="recent-post-image">
+                        <img src="/img/blog-details/325x150.jpg" alt="img" />
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          Leather theme is an elegant powerful and fully
-                          responsive
-                        </a>
+                        <Link href="/blog-details">
+                          <a>
+                            Leather theme is an elegant powerful and fully
+                            responsive
+                          </a>
+                        </Link>
                       </h6>
-                      <a href="blog-details.html" className="date">
-                        <i className="far fa-clock mr-2"></i>
-                        June 4, 2021
-                      </a>
+                      <Link href="/blog-details">
+                        <a className="date">
+                          <i className="far fa-clock mr-2"></i>
+                          June 4, 2021
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="sigma_recent-post">
-                    <a href="blog-details.html" className="recent-post-image">
-                      <img src="/img/blog-details/325x150-0.jpg" alt="img" />
-                    </a>
+                    <Link href="/blog-details">
+                      <a className="recent-post-image">
+                        <img src="/img/blog-details/325x150-0.jpg" alt="img" />
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          We are the champions Of The Leather Industry
-                        </a>
+                        <Link href="/blog-details">
+                          <a>We are the champions Of The Leather Industry</a>
+                        </Link>
                       </h6>
-                      <a href="blog-details.html" className="date">
-                        <i className="far fa-clock mr-2"></i>
-                        March 19, 2021
-                      </a>
+                      <Link href="/blog-details">
+                        <a className="date">
+                          <i className="far fa-clock mr-2"></i>
+                          March 19, 2021
+                        </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -636,19 +667,21 @@ export default function BlogDetails() {
                     </div>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          Every Next Level Of Machinery Leather Work We Have
-                        </a>
+                        <Link href="/blog-details">
+                          <a>
+                            Every Next Level Of Machinery Leather Work We Have
+                          </a>
+                        </Link>
                       </h6>
                       <div className="author-info d-flex align-items-center">
                         <span>TA</span>
                         <div>
-                          <a href="#" className="author-name">
-                            Tim Abell
-                          </a>
-                          <a href="blog-details.html" className="date">
-                            June 4, 2021
-                          </a>
+                          <Link href="#">
+                            <a className="author-name">Tim Abell</a>
+                          </Link>
+                          <Link href="/blog-details">
+                            <a className="date">June 4, 2021</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -659,19 +692,19 @@ export default function BlogDetails() {
                     </div>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          We are the champions, we do not give up, we try
-                        </a>
+                        <Link href="/blog-details">
+                          <a>We are the champions, we do not give up, we try</a>
+                        </Link>
                       </h6>
                       <div className="author-info d-flex align-items-center">
                         <span>TA</span>
                         <div>
-                          <a href="#" className="author-name">
-                            John Henry
-                          </a>
-                          <a href="blog-details.html" className="date">
-                            April 7, 2021
-                          </a>
+                          <Link href="#">
+                            <a className="author-name">John Henry</a>
+                          </Link>
+                          <Link href="/blog-details">
+                            <a className="date">April 7, 2021</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -682,19 +715,21 @@ export default function BlogDetails() {
                     </div>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="blog-details.html">
-                          Just believe in yourself, you are truly worth it.
-                        </a>
+                        <Link href="/blog-details">
+                          <a>
+                            Just believe in yourself, you are truly worth it.
+                          </a>
+                        </Link>
                       </h6>
                       <div className="author-info d-flex align-items-center">
                         <span>TA</span>
                         <div>
-                          <a href="#" className="author-name">
-                            Tim Cook
-                          </a>
-                          <a href="blog-details.html" className="date">
-                            June 24, 2021
-                          </a>
+                          <Link href="#">
+                            <a className="author-name">Tim Cook</a>
+                          </Link>
+                          <Link href="/blog-details">
+                            <a className="date">June 24, 2021</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -703,56 +738,74 @@ export default function BlogDetails() {
                 {/* <!-- Tags Widget --> */}
                 <div className="widget tagcloud">
                   <h5 className="widget-title">Popular Tags</h5>
-                  <a href="#">Leather</a>
-                  <a href="#">Duffle Bags</a>
-                  <a href="#">Footwear</a>
-                  <a href="#">Leather Kits</a>
-                  <a href="#">Leather Shoes</a>
+                  <Link href="#">
+                    <a>Leather</a>
+                  </Link>
+                  <Link href="#">
+                    <a>Duffle Bags</a>
+                  </Link>
+                  <Link href="#">
+                    <a>Footwear</a>
+                  </Link>
+                  <Link href="#">
+                    <a>Leather Kits</a>
+                  </Link>
+                  <Link href="#">
+                    <a>Leather Shoes</a>
+                  </Link>
                 </div>
                 {/* <!-- Follow Widget --> */}
                 <div className="widget widget-follow">
                   <h5 className="widget-title">Follow Us</h5>
                   <div className="social-buttons">
-                    <a href="#" className="btn-block sigma_btn">
-                      <div className="follow-icon d-flex align-items-center">
-                        <i className="fab fa-instagram"></i>
-                        <p className="mb-0">
-                          Instagram
-                          <span>225.5k Followers</span>
-                        </p>
-                      </div>
-                      <i className="fal fa-chevron-right"></i>
-                    </a>
-                    <a href="#" className="btn-block sigma_btn">
-                      <div className="follow-icon d-flex align-items-center">
-                        <i className="fab fa-twitter"></i>
-                        <p className="mb-0">
-                          Twitter
-                          <span>225.5k Followers</span>
-                        </p>
-                      </div>
-                      <i className="fal fa-chevron-right"></i>
-                    </a>
-                    <a href="#" className="btn-block sigma_btn">
-                      <div className="follow-icon d-flex align-items-center">
-                        <i className="fab fa-facebook-f"></i>
-                        <p className="mb-0">
-                          Facebook
-                          <span>225.5k Followers</span>
-                        </p>
-                      </div>
-                      <i className="fal fa-chevron-right"></i>
-                    </a>
-                    <a href="#" className="btn-block sigma_btn">
-                      <div className="follow-icon d-flex align-items-center">
-                        <i className="fab fa-youtube"></i>
-                        <p className="mb-0">
-                          Youtube
-                          <span>225.5k Followers</span>
-                        </p>
-                      </div>
-                      <i className="fal fa-chevron-right"></i>
-                    </a>
+                    <Link href="#">
+                      <a className="btn-block sigma_btn">
+                        <div className="follow-icon d-flex align-items-center">
+                          <i className="fab fa-instagram"></i>
+                          <p className="mb-0">
+                            Instagram
+                            <span>225.5k Followers</span>
+                          </p>
+                        </div>
+                        <i className="fal fa-chevron-right"></i>
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a className="btn-block sigma_btn">
+                        <div className="follow-icon d-flex align-items-center">
+                          <i className="fab fa-twitter"></i>
+                          <p className="mb-0">
+                            Twitter
+                            <span>225.5k Followers</span>
+                          </p>
+                        </div>
+                        <i className="fal fa-chevron-right"></i>
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a className="btn-block sigma_btn">
+                        <div className="follow-icon d-flex align-items-center">
+                          <i className="fab fa-facebook-f"></i>
+                          <p className="mb-0">
+                            Facebook
+                            <span>225.5k Followers</span>
+                          </p>
+                        </div>
+                        <i className="fal fa-chevron-right"></i>
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a className="btn-block sigma_btn">
+                        <div className="follow-icon d-flex align-items-center">
+                          <i className="fab fa-youtube"></i>
+                          <p className="mb-0">
+                            Youtube
+                            <span>225.5k Followers</span>
+                          </p>
+                        </div>
+                        <i className="fal fa-chevron-right"></i>
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 {/* <!-- Insta Widget --> */}
@@ -771,41 +824,53 @@ export default function BlogDetails() {
                 <div className="widget widget-sigma-recent-posts style-4">
                   <h5 className="widget-title">Recent Comments</h5>
                   <div className="sigma_recent-post align-items-start">
-                    <a href="#" className="recent-post-image">
-                      <i className="fal fa-comment-alt-dots"></i>
-                    </a>
+                    <Link href="#">
+                      <a className="recent-post-image">
+                        <i className="fal fa-comment-alt-dots"></i>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="#">
-                          <span>Tim Abell On</span> BEST SOLUTION FOR OPENCART
-                          ALL LEATHER PRODUCT 30% OFF{' '}
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <span>Tim Abell On</span> BEST SOLUTION FOR OPENCART
+                            ALL LEATHER PRODUCT 30% OFF
+                          </a>
+                        </Link>
                       </h6>
                     </div>
                   </div>
                   <div className="sigma_recent-post align-items-start">
-                    <a href="#" className="recent-post-image">
-                      <i className="fal fa-comment-alt-dots"></i>
-                    </a>
+                    <Link href="#">
+                      <a className="recent-post-image">
+                        <i className="fal fa-comment-alt-dots"></i>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="#">
-                          <span>Andrew Simon On</span> LEATHER LOVE MINIMUM 30%
-                          OFF ON BELTS & WALLETS{' '}
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <span>Andrew Simon On</span> LEATHER LOVE MINIMUM
+                            30% OFF ON BELTS & WALLETS
+                          </a>
+                        </Link>
                       </h6>
                     </div>
                   </div>
                   <div className="sigma_recent-post align-items-start">
-                    <a href="#" className="recent-post-image">
-                      <i className="fal fa-comment-alt-dots"></i>
-                    </a>
+                    <Link href="#">
+                      <a className="recent-post-image">
+                        <i className="fal fa-comment-alt-dots"></i>
+                      </a>
+                    </Link>
                     <div className="recent-post-descr">
                       <h6>
-                        <a href="#">
-                          <span>Tim Abell On</span> CREATE A MODERN LOOKING
-                          WEBSITE FOR ANY LEATHER ACCESSORIES{' '}
-                        </a>
+                        <Link href="#">
+                          <a>
+                            <span>Tim Abell On</span> CREATE A MODERN LOOKING
+                            WEBSITE FOR ANY LEATHER ACCESSORIES
+                          </a>
+                        </Link>
                       </h6>
                     </div>
                   </div>

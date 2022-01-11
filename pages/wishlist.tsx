@@ -55,26 +55,22 @@ export default function WishList() {
                     <img src="/img/wishlist/70.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Shoes</a>{' '}
+                        <a href="#">Leather Shoes</a>
                       </h6>
                       <p>1 Pieces</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>12.99$</strong>
                 </td>
                 <td data-title="Availability">
                   <span className="sigma_product-stock instock">In Stock</span>
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>12.99$</strong>
                 </td>
                 <td data-title="Actions">
-                  {' '}
                   <a href="#" className="sigma_btn btn-sm shadow-none">
                     Add to Cart
                   </a>
@@ -95,26 +91,22 @@ export default function WishList() {
                     <img src="/img/wishlist/70-0.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Belt</a>{' '}
+                        <a href="#">Leather Belt</a>
                       </h6>
                       <p>2 Piece</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>9.99$</strong>
                 </td>
                 <td data-title="Availability">
                   <span className="sigma_product-stock instock">In Stock</span>
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>9.99$</strong>
                 </td>
                 <td data-title="Actions">
-                  {' '}
                   <a href="#" className="sigma_btn btn-sm shadow-none">
                     Add to Cart
                   </a>
@@ -135,15 +127,13 @@ export default function WishList() {
                     <img src="/img/wishlist/70-1.jpg" alt="prod1" />
                     <div className="sigma_cart-product-body">
                       <h6>
-                        {' '}
-                        <a href="#">Leather Bag</a>{' '}
+                        <a href="#">Leather Bag</a>
                       </h6>
                       <p>3 Pieces</p>
                     </div>
                   </div>
                 </td>
                 <td data-title="Price">
-                  {' '}
                   <strong>13.99$</strong>
                 </td>
                 <td data-title="Availability">
@@ -152,11 +142,9 @@ export default function WishList() {
                   </span>
                 </td>
                 <td data-title="Total">
-                  {' '}
                   <strong>13.99$</strong>
                 </td>
                 <td data-title="Actions">
-                  {' '}
                   <a href="#" className="sigma_btn btn-sm shadow-none">
                     Add to Cart
                   </a>

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Login() {
   return (
     <>
@@ -41,8 +43,10 @@ export default function Login() {
                 <form method="post">
                   <div className="form-group">
                     <p className="mb-0">
-                      Need a New Account?{' '}
-                      <a href="signup.html">Create an account</a>
+                      Need a New Account?
+                      <Link href="/signup">
+                        <a>Create an account</a>
+                      </Link>
                     </p>
                   </div>
                   <label>Username</label>
